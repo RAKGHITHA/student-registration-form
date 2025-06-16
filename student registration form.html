@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Registration Form</title>
+</head>
+<body>
+
+	<h2>Student Registration Form</h2>
+
+	<form action="submit.html">
+		<label>First Name</label>
+		<input type="text" name="fname" placeholder="Enter First Name"><br><br>
+
+		<label>Last Name</label>
+		<input type="text" name="lname" placeholder="Enter Last Name"><br><br>
+
+		<label>Gender</label>
+		<input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female
+		<input type="radio" name="gender" value="other">Other<br><br>
+
+		<label>Date of Birth</label>
+		<input type="date" name="dob"><br><br>
+
+		<label>Email</label>
+		<input type="email" name="email" placeholder="Enter Email"><br><br>
+
+		<label>Mobile Number</label>
+		<input type="number" name="mobile" placeholder="Enter Mobile Number"><br><br>
+
+		<label>Password</label>
+		<input type="password" name="password"><br><br>
+
+		<label>Course</label>
+		<select name="course">
+			<option value="none">Select Course</option>
+			<option value="btech">B.Tech</option>
+			<option value="bsc">B.Sc</option>
+			<option value="bca">BCA</option>
+			<option value="mba">MBA</option>
+		</select><br><br>
+
+		<label>Qualification</label>
+		<input type="checkbox" name="ug" value="UG">UG
+		<input type="checkbox" name="pg" value="PG">PG<br><br>
+
+		<label>Address</label><br>
+		<textarea rows="4" cols="30" placeholder="Enter Address"></textarea><br><br>
+
+		<label>City</label>
+		<select name="city">
+			<option value="none">Select City</option>
+			<option value="madurai">Madurai</option>
+			<option value="chennai">Chennai</option>
+			<option value="coimbatore">Coimbatore</option>
+		</select><br><br>
+
+		<label>State</label>
+		<input type="text" name="state" list="state_list">
+		<datalist id="state_list">
+			<option value="Tamil Nadu">
+			<option value="Kerala">
+			<option value="Karnataka">
+		</datalist><br><br>
+
+		<input type="submit" value="Register">
+		<button type="reset">Reset</button>
+	</form>
+
+</body>
+</html>
